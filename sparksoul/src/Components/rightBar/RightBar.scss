@@ -1,0 +1,79 @@
+.rightBar{
+    flex: 3.5;
+    position: sticky;
+    top: 30px;
+    height: calc(100vh - 30px);
+    overflow: scroll;
+ 
+
+    &::-webkit-scrollbar{
+        display: none;
+    
+    }
+    .container{
+
+        .item{
+            -webkit-box-shadow: -6px 5px 13px 0px rgba(0,0,0,0.68);
+            -moz-box-shadow: -6px 5px 13px 0px rgba(0,0,0,0.68);
+            box-shadow: -6px 5px 13px 0px rgba(0,0,0,0.68);
+            padding: 20px;
+            margin-bottom: 20px;
+
+            .user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0px;
+
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    position: relative;
+
+                    .image{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .online{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: limegreen;
+                        position: absolute;
+                        top: 0;
+                        left: 30px;
+                    }
+                }
+
+                .buttons{
+
+                    .flwbtn{
+                        border: none;
+                        padding: 5px;
+                        color: white;
+                        cursor: pointer;
+                        background-color: blue;
+                        margin-right: 10px;
+                        width: 100px;
+                        border-radius: 5px;
+                    }
+
+                    .clrbtn{
+                        border: none;
+                        padding: 5px;
+                        color: white;
+                        cursor: pointer;
+                        background-color: red;
+                        margin-right: 10px;
+                        width: 100px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

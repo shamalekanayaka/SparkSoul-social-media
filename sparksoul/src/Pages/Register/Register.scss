@@ -1,0 +1,88 @@
+.register{
+    
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .card{
+        width: 1250px;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 600px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .left{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+           
+            .heading{
+                color: rgb(10, 20, 220);
+                font-size: 56px;
+            }
+            
+            .form{
+                display: flex;
+                flex-direction: column;
+
+                .input{
+                    border: none;
+                    border-bottom: 1px solid rgb(149, 148, 148);
+                    padding: 10px;
+                }
+
+                .error{
+                    color: red;
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+
+                .button{
+                    width: 50%;
+                    background-color: aqua;
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    font-weight: bold;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .right{
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: aquamarine;
+
+            .heading{
+                font-size: 60px;
+                line-height: 100px;
+                color: rgb(45, 20, 171);
+            }
+
+            .lgnbutton{
+                width: 50%;
+                background-color: aqua;
+                color: white;
+                font-size: 20px;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+
+    }
+}
